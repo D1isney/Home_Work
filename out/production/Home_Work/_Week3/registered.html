@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        function checkusername(){
+            var name = document.getElementById("user").value;
+            var regex = /^(\w){3,20}$/;
+            var objEx = new RegExp(regex);
+            if(!objEx.test(name)){
+                document.getElementById("userMsg").innerHTML ="ps:用户姓名不合法";
+            }
+            else{
+                document.getElementById("userMsg").innerHTML ="";
+        
+            }
+        }
+
+        function checkpwd(){
+            var password = document.getElementById('pwd').value;
+            var regex = /^[A-Za-z]{1}([A-Za-z0-9]|[._]){5,19}$/;
+            var objEx = new RegExp(regex);
+            if(!objEx.test(password)){
+                document.getElementById("pwdMsg").innerHTML ="ps:密码不合法";
+            }
+            else{
+                document.getElementById("pwdMsg").innerHTML ="";
+            }
+        }
+
+        function checkrepwd(){
+            var password = document.getElementById('pwd').value;
+            var repassword = document.getElementById('repwd').value;
+            if(password == repassword){
+                document.getElementById("repwdMsg").innerHTML ="";
+            }else{
+                document.getElementById("repwdMsg").innerHTML ="ps:两次密码不一致";
+            }
+        }
+
+        function checkEmail() {
+            var email = document.getElementById('email').value;
+            var regex = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+            var objEx = new RegExp(regex);
+            if(!objEx.test(email)){
+                document.getElementById("emailMsg").innerHTML ="ps:邮箱格式不合法";
+            }else{
+                document.getElementById("emailMsg").innerHTML ="";
+            }
+        }
+
+        function checkphone(){
+            var phone1 = document.getElementById("phone").value;
+            var regex = /^1[3456789]\d{9}$ /;
+            var objEx = new RegExp(regex);
+            if(!objEx.test(phone1)){
+                document.getElementById("phoneMsg").innerHTML ="ps:电话号码不合法";
+            }else{
+                document.getElementById("phoneMsg").innerHTML ="";
+            }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <div class="all_box">
+        <div class="title">
+            智 慧 城 市 系 统
+        </div>
+        <div class="form_box">
+            <form action="#" name="form1" method="post" class="registered_table">
+                <p>
+                    用户名：&emsp;
+                    <input type="text" id="user" 
+                    placeholder="请输入3-20个字符"
+                    onkeyup="checkusername()" title="请输入用户名"
+                    >
+                    <span id="userMsg" style="color: red;"></span>
+                </p>
+                <p>
+                    密&emsp;&emsp;码：
+                    <input id="pwd" type="password" 
+                    placeholder="以字母开头，6-20长度"
+                    name = "pwd" title="请输入密码" onkeyup="checkpwd()"
+                    >
+                    <span id="pwdMsg" style="color: red;"></span>
+                </p>
+                <p>
+                    确认密码：<input name="repwd" 
+                    type="password" 
+                    placeholder="以字母开头，6-20长度"
+                    onkeyup="checkrepwd()" id="repwd"
+                    title="请再次输入密码"
+                    >
+                    <span id="repwdMsg" style="color: red;"></span>
+                </p>
+                <p>
+                    性&emsp;&emsp;别：<input type="radio" name="sex" id="sex_0" checked value="男">男 <input type="radio" name="sex" id="sex_1" value="女">女
+                </p>
+                <p>
+                    E - mail ：<input type="text" 
+                    placeholder="请输入邮箱地址"
+                    title="E-mail地址"
+                    onkeyup="checkEmail()"
+                    id="email"
+                    name="email"
+                    >
+                    <span id="emailMsg" style="color: red;"></span>
+                </p>
+                <p>
+                    联系电话：<input type="text" 
+                    placeholder="请输入电话号码"
+                    name="phone"
+                    id="phone"
+                    onkeyup="checkphone()"
+                    title="请输入电话"
+                    >
+                    <span id="phoneMsg" style="color: red;"></span>
+                </p>
+                
+                
+                <button type="submit" name="submit1" value="立即注册">立即注册</button>
+                <button type="reset" name="reset1">重置</button>
+                <br>
+                
+                <div class="login">
+                    已有账号，请立即<a href="./index.html">登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

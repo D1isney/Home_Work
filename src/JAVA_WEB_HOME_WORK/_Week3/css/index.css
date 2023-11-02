@@ -1,0 +1,72 @@
+body{
+    background: url(../img/index.jpeg) no-repeat;
+    background-size: 100% 100%;
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+}
+.all_box{
+    width: 100vw;
+    /* height: 300px; */
+    height: 90vh;
+    margin: auto;
+    /* position: absolute; */
+}
+.title{
+    width: 100%;
+    height: 100px;
+    margin-top: 10vh;
+    padding-top: 20px;
+    /* background-color: #fff; */
+    /* margin-top: 5%; */
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    font-family: 'KaiTi';
+}
+.form_box{
+    width: 91vw;
+    height: 40vh;
+    margin-top: 10vh;
+    margin-left: 9vw;
+    /* background-color: #fff; */
+}
+.form_table{
+    width: 45%;
+    height: 100%;
+    /* background-color: #000; */
+    margin: auto;
+}
+.form_table p input{
+    border: 0;
+    background: #faf8f8;
+    border-radius: 3px;
+}
+.registered{
+    width: 70%;
+    height: 3vh;
+    margin-top: 4vh;
+    /* background-color: #fff; */
+    text-align: right;
+    font-size: .9em;
+}
+.registered a{
+    color: black;
+    font-size: .9em;
+}
+
+.registered_table{
+    width: 45%;
+    height: 100%;
+    /* background-color: #000; */
+    margin: auto;
+}
+.login{
+    text-align: left;
+    width: 100%;
+    height: 3vh;
+    margin-top: 4vh;
+    /* background-color: #fff; */
+    font-size: .9em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        function userName(){
+            var name = document.getElementById("user").value;
+            // alert(name)
+            var regex = /^(\w){3,20}$/;
+            var objEx = new RegExp(regex);
+            if(!objEx.test(name)){
+                document.getElementById("userNameMsg").innerHTML ="ps:无效用户名！请输入3-20个字符";
+            }
+            else{
+                document.getElementById("userNameMsg").innerHTML ="";
+        
+            }
+        }
+        function login() {
+            var pwd = document.getElementById("loginpwd").value;
+            if(pwd == ""){
+                alert("请输入密码！");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="all_box">
+        <div class="title">
+            智 慧 城 市 系 统
+        </div>
+        <div class="form_box">
+            <form action="#" method="get" class="form_table">
+                <p>
+                    用户名：<input type="text" 
+                    id="user" onkeyup="userName()"
+                    title="请输入正确的密码">
+                    <span id="userNameMsg" style="color: red;"></span>
+                </p>
+                <p>
+                    密 &nbsp; 码：<input id="loginpwd" type="password">
+                </p>
+                <button type="submit" onclick="login()" class="btn">登录</button>
+                <button type="reset">重置</button>
+                <br>
+                
+                <div class="registered">
+                    还没注册账号，立即<a href="./registered.html">注册</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

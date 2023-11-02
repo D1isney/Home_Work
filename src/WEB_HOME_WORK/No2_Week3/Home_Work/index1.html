@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课后习题</title>
+    <style>
+        *{
+            user-select: none;
+        }
+        .unline {
+            text-decoration: underline;
+        }
+        .courses{
+            padding-left: 10px;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            border: 2px solid #000;
+            color: #000;
+            font-weight: 700;
+            border-radius: 2px;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        .examination{
+            padding-left: 10px;
+            width: 400px;
+            height: 280px;
+            border: 1px solid #000;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="courses">
+        <h4>学生选课信息</h4>
+        <ol type="1">
+            <li>必须课
+                <br>
+                <ul>
+                    <li>公共选修课
+                        <ul type="square">
+                            <li class="unline">计算机基础</li>
+                            <li class="unline">大学外语</li>
+                        </ul>
+                    </li>
+                    <li>专业必修课</li>
+                </ul>
+
+            </li>
+            <li>选修课<br>
+                <ol type="a">
+                    <li>公共选修课</li>
+                    <li>专业选修课</li>
+                </ol>
+
+            </li>
+        </ol>
+    </div>
+
+    <div class="examination">
+        <h3>考试报名表</h3>
+        <form action="#" style="width: 400px;height: 250px;">
+            <p>
+                用户名：<input type="text" placeholder="admin">
+            </p>
+            <p>
+                文理选择：<input type="radio" name="disciplines">文科 <input type="radio" name="disciplines">理科 <input type="radio" name="disciplines" checked>综合
+            </p>
+            
+            <p>
+                报考科目：<input type="checkbox"> 数学 <input type="checkbox"> 语文 <input type="checkbox"> 英语 <input type="checkbox"> 物理 
+                <p>
+                    <input type="checkbox"> 化学 <input type="checkbox"> 生物 <input type="checkbox"> 政治 <input type="checkbox"> 历史 <input type="checkbox"> 地理 
+                </p>
+               
+            </p>
+           
+            <p>
+                报考级别：
+                <select name="level" id="level">
+                    <option>A</section>
+                    <option>B</section>
+                    <option>C</section>
+                </select>
+            </p>
+
+            <button type="submit">提交</button>
+            <button type="reset">重置</button>
+            <button type="button">确定</button>
+        </form>
+    </div>
+</body>
+
+</html>

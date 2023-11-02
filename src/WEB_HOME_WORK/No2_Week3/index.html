@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tableBox {
+        border: 1px solid #000;
+        width: 1200px;
+        /* height: 600px; */
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .tableBox thead th {
+        border: 1px solid #000;
+    }
+    
+    .tableBox tbody tr td {
+        border: 1px solid #000;
+    }
+    
+    .imgSize {
+        width: 80px;
+        height: 50px;
+        margin-top: 5px;
+    }
+    
+    thead th {
+        background-color: #8d8787;
+    }
+    
+    thead th:hover {
+        background-color: #adbb7b;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    form {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        /* margin-top: 30px; */
+        border: .3px solid #dbdada;
+        border-radius: 30px;
+        background-color: #cac4c4;
+        box-shadow: 0px 0px 20px 20px #cac4c4;
+    }
+    
+    form button {
+        width: 80px;
+        height: 30px;
+        /* background-color: #8d8787; */
+        border: 0;
+        border-radius: 20px;
+        background-color: #b6b4b4;
+        font-size: .8em;
+        font-weight: bold;
+    }
+    
+    form button:hover {
+        cursor: pointer;
+        background-color: #8f8e8e;
+    }
+    
+    form input {
+        /* background-color: #7c7979; */
+        border: 0;
+        /* height: 15px; */
+        /* width: 60px; */
+        /* text-align: left; */
+        /* float: left;*/
+        color: aliceblue;
+        border-radius: 6px;
+        text-align: right;
+    }
+</style>
+
+<body>
+</body>
+
+<table class="tableBox">
+    <thead>
+        <th>职业类型</th>
+        <th>成员编号</th>
+        <th>成员图片</th>
+        <th>成员姓名</th>
+        <th>性别</th>
+        <th>工作年限/入职时长（年）</th>
+    </thead>
+    <tbody>
+        <!-- HTML -->
+        <tr>
+            <td rowspan="3">HTML5</td>
+            <td>ht1 - 0001</td>
+            <td>
+                <img src="./img/h1.jpg" alt="" class="imgSize">
+            </td>
+            <td>ht1</td>
+            <td>女</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>ht1 - 0002</td>
+            <td>
+                <img src="./img/h2.jpg" alt="" class="imgSize">
+            </td>
+            <td>ht2</td>
+            <td>男</td>
+            <td>1</td>
+            <!-- <td>4</td> -->
+        </tr>
+        <tr>
+            <td>ht1 - 0003</td>
+            <td>
+                <img src="./img/h3.jpg" class="imgSize" alt="">
+            </td>
+            <td>ht3</td>
+            <td>男</td>
+            <td>1</td>
+            <!-- <td>4</td> -->
+        </tr>
+
+
+
+        <!-- IOS -->
+        <tr>
+            <td rowspan="2">IOS</td>
+            <td>io - 0001</td>
+            <td>图片</td>
+            <td>io1</td>
+            <td>女</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>io1 - 0002</td>
+            <td>图片</td>
+            <td>io2</td>
+            <td>女</td>
+            <td>1</td>
+        </tr>
+
+        <!-- Android -->
+        <tr>
+            <td rowspan="2">Android</td>
+            <td>an - 0001</td>
+            <td>图片</td>
+            <td>an1</td>
+            <td>男</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>an - 0002</td>
+            <td>图片</td>
+            <td>an2</td>
+            <td>男</td>
+            <td>1</td>
+        </tr>
+
+        <!-- leader -->
+        <tr>
+            <td rowspan="1">LEADER</td>
+            <td>le - 0001</td>
+            <td>图片</td>
+            <td>le1</td>
+            <td>女</td>
+            <td>1</td>
+        </tr>
+
+
+
+
+
+
+    </tbody>
+
+</table>
+<br>
+<form action="#">
+    <h1>注册</h1>
+    账号：<input type="text" placeholder="admin">
+    <br>密码：<input type="password" placeholder="******">
+    <br>性别：男<input type="radio" name="sex" checked> 女<input type="radio" name="sex">
+    <br>邮箱：<input type="text" placeholder="123456789@qq.com">
+    <br>电话：<input type="text" placeholder="14579546475">
+    <br>
+    <br><button type="submit">登 录</button>
+    <button type="reset">重 置</button>
+</form>
+
+<!-- 无序 -->
+<ul style="float: left; margin-right: 100px;" type="square">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<!-- 有序 -->
+<ol type="I">
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<!-- 自定义列表 -->
+<dl>
+    <dt>第一级目录</dt>
+    <dd>第一列内容</dd>
+    <dd>第一列内容</dd>
+    <dd>第一列内容</dd>
+
+    <dt>第二级目录</dt>
+    <dd>第二列内容</dd>
+    <dt>第三级目录</dt>
+    <dd>第三列内容</dd>
+</dl>
+
+
+
+
+
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Home_Work.iml" filepath="$PROJECT_DIR$/Home_Work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVASE_HOME_WORK/JAVASE_HOME_WORK.iml" filepath="$PROJECT_DIR$/JAVASE_HOME_WORK/JAVASE_HOME_WORK.iml" />
+    </modules>
+  </component>
+</project>
